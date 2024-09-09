@@ -4,10 +4,7 @@
   "type": "module",
   "description": "A simple TypeScript starter template",
   "private": true,
-  "keywords": [
-    "starter",
-    "typescript"
-  ],
+  "keywords": ["starter", "typescript"],
   "license": "MIT",
   "author": "ssakihara",
   "main": "dist/index.js",
@@ -21,14 +18,16 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@commitlint/types": "^19.0.3",
+    "@semantic-release/npm": "^12.0.1",
     "@tsconfig/recommended": "^1.0.7",
     "@types/node": "^22.5.4",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
     "rimraf": "^6.0.1",
+    "semantic-release": "^24.1.0",
     "tsc-alias": "^1.8.10",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4",
@@ -36,6 +35,6 @@
   },
   "packageManager": "pnpm@9.9.0+sha224.112229e79a88520fc0d9f8e78c533bb5b83890d74411331f42f530a1",
   "volta": {
-    "node": "20.15.1"
+    "node": "20.17.0"
   }
 }
