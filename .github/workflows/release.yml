@@ -47,6 +47,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: Run biome and test
+        run: |
+          pnpm run biomecheck && pnpm run test
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
