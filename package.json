@@ -38,6 +38,9 @@
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/ssakihara"
+  },
   "packageManager": "pnpm@9.9.0+sha224.112229e79a88520fc0d9f8e78c533bb5b83890d74411331f42f530a1",
   "volta": {
     "node": "20.17.0"
