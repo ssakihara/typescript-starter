@@ -1,8 +1,24 @@
 {
   "name": "@ssakihara/typescript-starter",
-  "description": "",
   "version": "1.0.0",
+  "type": "module",
+  "description": "A simple TypeScript starter template",
+  "private": true,
+  "keywords": [
+    "starter",
+    "typescript"
+  ],
+  "license": "MIT",
   "author": "ssakihara",
+  "main": "dist/index.js",
+  "scripts": {
+    "biomecheck": "biome check --write .",
+    "build": "rimraf dist && tsc -p tsconfig.build.json&& tsc-alias -p tsconfig.build.json",
+    "dev": "dotenvx run -- tsx watch src/index.ts",
+    "preinstall": "pnpm build",
+    "prepare": "husky || true",
+    "test": "vitest"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
     "@commitlint/cli": "^19.4.0",
@@ -18,23 +34,7 @@
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },
-  "keywords": [
-    "starter",
-    "typescript"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
   "packageManager": "pnpm@9.9.0+sha224.112229e79a88520fc0d9f8e78c533bb5b83890d74411331f42f530a1",
-  "private": true,
-  "scripts": {
-    "biomecheck": "biome check --write .",
-    "build": "rimraf dist && tsc -p tsconfig.build.json&& tsc-alias -p tsconfig.build.json",
-    "dev": "dotenvx run -- tsx watch src/index.ts",
-    "preinstall": "pnpm build",
-    "prepare": "husky || true",
-    "test": "vitest"
-  },
-  "type": "module",
   "volta": {
     "node": "20.15.1"
   }
