@@ -9,7 +9,8 @@
   "author": "ssakihara",
   "main": "dist/index.js",
   "scripts": {
-    "biomecheck": "biome check --write .",
+    "biomecheck": "biome check .",
+    "biomecheck:fix": "biome check --write .",
     "build": "rimraf dist && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "preinstall": "pnpm build",
     "prepare": "husky || true",
