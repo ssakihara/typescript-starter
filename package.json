@@ -12,7 +12,7 @@
     "biomecheck": "biome check .",
     "biomecheck:fix": "biome check --write .",
     "build": "rimraf dist && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
-    "preinstall": "pnpm build",
+    "postinstall": "pnpm build",
     "prepare": "husky || true",
     "test": "vitest"
   },
