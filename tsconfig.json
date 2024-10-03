@@ -3,6 +3,10 @@
   "compilerOptions": {
     "declaration": true,
     "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "exactOptionalPropertyTypes": true,
     "outDir": "dist",
     "rootDir": ".",
     "baseUrl": ".",
