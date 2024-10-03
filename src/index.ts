@@ -1,3 +1,3 @@
-import { sum } from '~/utils';
+import { sumPositives } from '~/utils';
 
-export { sum };
+export { sumPositives };

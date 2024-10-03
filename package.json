@@ -19,7 +19,9 @@
     "prepare": "husky || true",
     "test": "vitest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",
     "@commitlint/cli": "^19.5.0",

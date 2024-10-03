@@ -1,9 +1,16 @@
+import { type ZodNumber, numberSchema } from '~/models/utils';
+
 /**
  * Add two numbers
  * @param a - The first number
  * @param b - The second number
  * @returns The sum of the two numbers
  * @example
- * sum(1, 2) // 3
+ * sumPositives(1, 2) // 3
  */
-export const sum = (a: number, b: number) => a + b;
+export const sumPositives = (a: ZodNumber, b: ZodNumber) => {
+  numberSchema.parse(a);
+  numberSchema.parse(b);
+
+  return a + b;
+};
