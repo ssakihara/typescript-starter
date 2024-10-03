@@ -42,8 +42,8 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/ssakihara"
   },
-  "packageManager": "pnpm@9.10.0+sha224.31c87206451f8df4c49f6d795392c98b52c7a59865d0788546df1431",
+  "packageManager": "pnpm@9.12.0+sha224.117b316b2872aa4733dbbfa75724d1cefd6a413fe1ce6574715849b5",
   "volta": {
-    "node": "20.17.0"
+    "node": "22.9.0"
   }
 }
